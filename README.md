@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Tatto-47
+- 👋 Hi there, I’m @Paul Christian
 - 👀 I’m interested in Programing
 - 🌱 I’m currently learning software engineering  
 - 💞️ I’m looking to collaborate on any field related to software engineering 
