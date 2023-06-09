@@ -1,0 +1,34 @@
+1. Structure du Site :
+
+Voici comment votre site pourrait être structuré, en tenant compte de vos préférences :
+
+Page d'accueil
+À propos de nous
+Services
+Blog
+Contact
+Fichier de plainte
+Chaque page aura son propre fichier HTML et CSS.
+
+2. Technologie :
+
+Comme vous l'avez demandé, le site sera construit uniquement en HTML5 et CSS3.
+
+3. Design du Site :
+
+Le site aura des couleurs bleu clair et aqua, avec une attention particulière à la convivialité et à l'attrait esthétique. Chaque page aura son propre fichier CSS pour la mise en page et le design.
+
+4. Exigences Spécifiques :
+
+Voici comment nous pourrions répondre à chacune de vos exigences spécifiques :
+
+Les pages seront validées pour le HTML5 et le CSS3.
+Les 5 pages du site serviront de sections, avec un menu de navigation pour passer de l'une à l'autre.
+Nous inclurons des listes non-ordonnées et ordonnées dans le contenu du site. Par exemple, nous pourrions énumérer vos services en utilisant une liste.
+Nous inclurons des liens internes sur au moins une page. Par exemple, la page d'accueil pourrait avoir des liens vers des sections spécifiques des autres pages.
+Le site sera en français et exempt d'erreurs d'encodage de caractères.
+Nous inclurons un tableau sur le site, par exemple pour décrire différents forfaits de tutorat.
+Nous inclurons au moins 5 images sur le site, en plus des images de design.
+Le site contiendra du texte pertinent et des liens externes, par exemple vers des ressources d'apprentissage.
+Le site sera optimisé pour Google Chrome.
+Le formulaire de plainte comprendra au moins 5 champs avec des labels appropriés.
