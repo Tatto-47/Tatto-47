@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plainte - ASCR_TUTO</title>
+    <link rel="stylesheet" href="plainte.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="complaint.html">Plainte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulaire de Plainte</h1>
+        <p>Nous prenons vos plaintes très au sérieux. Si vous rencontrez un problème, veuillez le signaler à l'aide du formulaire ci-dessous.</p>
+        
+        <form action="#">
+            <label for="name">Votre nom:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Votre email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="subject">Sujet:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="details">Détails:</label><br>
+            <textarea id="details" name="details"></textarea><br>
+            <label for="urgency">Urgence:</label><br>
+            <select id="urgency" name="urgency">
+                <option value="low">Faible</option>
+                <option value="medium">Moyenne</option>
+                <option value="high">Haute</option>
+            </select><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ASCR_TUTO. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
