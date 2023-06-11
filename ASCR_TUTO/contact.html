@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact - ASCR_TUTO</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -22,18 +22,41 @@
     </header>
 
     <main>
-        <h1>Contactez-nous</h1>
-        <p>Nous serions ravis de vous entendre! Que vous ayez une question, un commentaire ou une suggestion, n'hésitez pas à nous contacter en utilisant le formulaire ci-dessous.</p>
-        
-        <form action="#">
-            <label for="name">Votre nom:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Votre email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Votre message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
+        <div id="para1">
+            <h1>Contactez-nous</h1>
+            <h2>Nous serions ravis de vous entendre! n'hésitez pas à nous contacter par l'un des moyens ci-dessous.</h2>
+        </div>
+
+        <div class="contact-info">
+            
+            <span>
+                <h2>Par téléphone</h2>
+                <p>Veuillez nous appeler au numéro suivant : </p>
+                <p>Francais: (855) 456-7890</p> 
+                <p>Anglais: (514) 456-7890</p>  
+            </span>
+            
+            <h2>Par courrier électronique</h2>
+            <p>info@ascr_tuto.com.</p>
+        </div>
+        <br><br>
+
+        <h2>Formulaire de Contact</h2>
+        <form action="index.php" method="post">
+            <label for="Firstname"></label><br>
+            <input type="text" id="Firstname" name="Firstname" placeholder="PRÉNOM" required><br>
+            <label for="name"></label><br>
+            <input type="text" id="name" name="name" placeholder="NOM" required><br>
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder="Email: Exemple :abc@gmail.com" required><br>
+            <label for="message"></label><br>
+            <textarea id="message" name="message" placeholder="Inscrivez votre message ici" required></textarea><br><br>
             <input type="submit" value="Envoyer">
+            <input type="reset" value="Reinitialiser">
+            <br>
         </form>
+
+        
     </main>
 
     <footer>

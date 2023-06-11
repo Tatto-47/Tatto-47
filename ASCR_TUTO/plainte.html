@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Plainte - ASCR_TUTO</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="plainte.css">
 </head>
 
 <body>
@@ -22,25 +22,31 @@
     </header>
 
     <main>
-        <h1>Formulaire de Plainte</h1>
-        <p>Nous prenons vos plaintes très au sérieux. Si vous rencontrez un problème, veuillez le signaler à l'aide du formulaire ci-dessous.</p>
         
-        <form action="#">
-            <label for="name">Votre nom:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Votre email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="subject">Sujet:</label><br>
-            <input type="text" id="subject" name="subject"><br>
-            <label for="details">Détails:</label><br>
-            <textarea id="details" name="details"></textarea><br>
-            <label for="urgency">Urgence:</label><br>
+         <h1>Formulaire de Plainte</h1>
+        <p>Nous prenons vos plaintes très au sérieux. <br> Si vous rencontrez un problème, veuillez le signaler à l'aide du formulaire ci-dessous.</p>
+
+        <form action="index.php" method="post">
+            <label for="Firstname"></label><br>
+            <input type="text" id="Firstname" name="Firstname" placeholder="Prenom" required><br>
+            <label for="name"></label><br>
+            <input type="text" id="name" name="name" placeholder="Nom" required><br>
+            <label for="email"></label><br>
+            <input type="text" id="Telephone" name="Telephone" placeholder="Téléphone: Eemple : (123) 456-7890" required><br>
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder="email : Exemple abc@gmail.com" required><br>
+            <label for="subject"></label><br>
+            <input type="text" id="subject" name="subject" placeholder="Objet de la plainte" required><br>
+            <label for="details"></label><br>
+            <textarea id="details" name="details" placeholder="Veuillez inscrire les details de la plainte ici" required></textarea><br>
+            <label for="urgency">Choisir le niveau d'urgence:</label><br>
             <select id="urgency" name="urgency">
                 <option value="low">Faible</option>
-                <option value="medium">Moyenne</option>
-                <option value="high">Haute</option>
-            </select><br>
-            <input type="submit" value="Envoyer">
+                <option value="medium">Moyen</option>
+                <option value="high">Haut</option>
+            </select><br><br>
+            <input type="submit" value="Soumettre">
+            <input type="reset" value="Reinitialiser">
         </form>
     </main>
 
