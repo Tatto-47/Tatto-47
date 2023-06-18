@@ -1,29 +1,42 @@
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    padding: 0 0 60px 0; 
+    background-color: rgb(206, 215, 218); 
 }
 
 header {
-    background-color: #1197ea; 
+    background-color: #ebeeef; 
     padding: 10px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+    height: 60px;
 }
 
-header h1 {
-    margin: 0;
-    padding: 0 15px;
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start; 
+
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+    margin-right: 100px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    justify-content: space-between;
+    height: 100%; 
+    align-items: center; 
 }
 
 nav ul li {
@@ -34,55 +47,88 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(234, 235, 239);
+    color: rgb(11, 75, 93);
     padding: 25px;
     display: block;
     text-align: center;
 }
-
 nav a:hover{
-    background-color: #39a3e4;
+    background-color: #d7e1e7;
+    overflow: hidden;
 }
 
-.blog-post {
-    background-color: white;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin: 15px;
-    border-radius: 5px;
+main {
+    padding: 60px;
+    background-color: #e6edee; 
+    width:auto; 
+    overflow: hidden; 
 }
-main .cl{
+
+main h1{
     text-align: center;
-    background-color: #9aeeee;
-    color: rgb(4, 7, 178);
+    background-color: #1a8496;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
 }
 
-.blog-post img {
-    float: left;
-    margin-right: 15px;
-    border-radius: 5px;
-    max-width: 30%;
-    height: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.blog-post #pic{
+#blog1 .blog-text, #blog3 .blog-text, #blog5 .blog-text {
     float: right;
-    margin-left: 15px;
-    border-radius: 5px;
-    max-width: 25%;
-    height: auto;
+    width: 45%;
+    padding: 10px;
 }
 
-.blog-post h2 {
-    color: #0288d1;
-    margin-top: 0;
+#blog2 .blog-text, #blog4 .blog-text {
+    float: right;
+    width: 45%;
+    padding: 10px;
+}
+
+#blog1 img, #blog3 img, #blog5 img {
+    float: right;
+    max-width: 50%;
+    height: auto;
+    margin: 10px 0 10px 20px;
+}
+
+#blog2 img, #blog4 img {
+    float: left;
+    max-width: 50%;
+    height: auto;
+    margin: 10px 20px 10px 0;
+}
+
+.blog-text {
+    overflow: hidden;
+}
+
+.blog-text h2 {
+    color: #3a7cbf;
+    margin-bottom: 20px;
+}
+
+.blog-text p {
+    text-align: justify;
+}
+
+#blog1, #blog2, #blog3, #blog4, #blog5 {
+    margin: 20px 0;
+    overflow: none;
 }
 
 footer {
-    background-color: #0288d1;
-    color: white;
+    background-color: #4f8089;
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 15px;
+    color: white;
+    position: fixed; /* Ajouté pour fixer le footer en bas */
+    bottom: 0; /* Ajouté pour fixer le footer en bas */
+    width: 100%; /* Ajouté pour que le footer occupe toute la largeur */
+    height: 60px; /* Ajouté pour donner une hauteur au footer */
 }
-

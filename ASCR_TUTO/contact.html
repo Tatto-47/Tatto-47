@@ -10,58 +10,60 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="AproposDeNous.html">À propos de nous</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="plainte.html">Plainte</a></li>
-            </ul>
+            <div class="logo-nav-container">
+                <a href="index.html">
+                <img class="logo" src="Images_ASCR_TUTO/logo.png" alt="Company logo">
+                </a>
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="AproposDeNous.html">À propos de nous</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="plainte.html">Plainte</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div id="para1">
-            <h1>Contactez-nous</h1>
-            <h2>Nous serions ravis de vous entendre! n'hésitez pas à nous contacter par l'un des moyens ci-dessous.</h2>
+        <h1>Contactez-nous</h1>
+        <div class="contact-container">
+            <section class="contact-info">
+                <h2>Téléphone</h2>
+                <p>Vous pouvez nous joindre au:</p>
+                <p>Français :<a href="tel:123456789">(123)-456-7890</a></p>
+                <p>Anglais : <a href="tel:980654321">(980)-65-4321</a></p>
+                <p>Ligne Locale : <a href="tel:8889113131">+1 (888) 911-3113</a></p>
+    
+                <h2>Email</h2>
+                <p>Envoyez-nous un email à : <a href="mailto:ascr_tuto@gmail.com">ascr_tuto@gmail.com</a></p>
+
+                <h2>Réseaux Sociaux</h2>
+                <p><a href="https://twitter.com/@ascr_tuto" target="_blank">Twitter : @ascr_tuto</a></p>
+                <p><a href="https://linkedin.com/in/your_linkedin_handle" target="_blank">LinkedIn : ascr_tuto</a></p>
+            </section>
+    
+            <section class="contact-form">
+                <h2>Formulaire de Contact</h2>
+                <form action="submit_form.php" method="post">
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
         </div>
 
-        <div class="contact-info">
-            
-            <span>
-                <h2>Par téléphone</h2>
-                <p>Veuillez nous appeler au numéro suivant : </p>
-                <p>Francais: (855) 456-7890</p> 
-                <p>Anglais: (514) 456-7890</p>  
-            </span>
-            
-            <h2>Par courrier électronique</h2>
-            <p>info@ascr_tuto.com.</p>
+        <h2>Nos locaux</h2>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35246.84796750219!2d-73.5893872768008!3d45.517572465115855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC%2C%20Canada!5e0!3m2!1sen!2sfr!4v1686526127279!5m2!1sen!2sfr"></iframe>
         </div>
-        <br><br>
-
-        <h2>Formulaire de Contact</h2>
-        <form action="index.php" method="post">
-            <label for="Firstname"></label><br>
-            <input type="text" id="Firstname" name="Firstname" placeholder="PRÉNOM" required><br>
-            <label for="name"></label><br>
-            <input type="text" id="name" name="name" placeholder="NOM" required><br>
-            <label for="email"></label><br>
-            <input type="email" id="email" name="email" placeholder="Email: Exemple :abc@gmail.com" required><br>
-            <label for="message"></label><br>
-            <textarea id="message" name="message" placeholder="Inscrivez votre message ici" required></textarea><br><br>
-            <input type="submit" value="Envoyer">
-            <input type="reset" value="Reinitialiser">
-            <br>
-        </form>
-
-        
     </main>
 
     <footer>
         <p>&copy; 2023 ASCR_TUTO. Tous droits réservés.</p>
     </footer>
 </body>
-
 </html>

@@ -2,20 +2,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: rgb(206, 215, 218); 
 }
+
 
 header {
-    background-color: #1197ea; 
+    background-color: #ebeeef; 
     padding: 10px;
     text-align: center;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
+    height: 60px;
 }
 
-main h1 {
-    margin: 0;
-    padding: 0 15px;
-    text-align: center;
-    background-color: rgb(178, 245, 245);
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start; 
+
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+    margin-right: 100px;
 }
 
 nav ul {
@@ -24,24 +36,27 @@ nav ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    justify-content: space-between;
+    height: 100%; /* Assure que les liens prennent toute la hauteur de la barre de navigation */
+    align-items: center; /* Centre les liens verticalement */
 }
 
 nav ul li {
     display: inline;
     margin-right: 10px;
     float: left;
+    
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(225, 227, 232);
+    color: rgb(11, 75, 93);
     padding: 25px;
     display: block;
     text-align: center;
 }
-
 nav a:hover{
-    background-color: #39a3e4;
+    background-color: #d7e1e7;
 }
 
 main {
@@ -51,7 +66,13 @@ main {
 }
 
 main h1 {
-    color: #0288d1;
+    margin: 0;
+    text-align: center;
+    background-color: #1a8496;
+    color: white;
+    padding: 40px;
+
+
 }
 
 main section {
@@ -59,31 +80,79 @@ main section {
 }
 
 main section h2 {
-    color: #0288d1;
+    color: #4f8089;
 }
 
 table {
     width: 100%;
+    margin: 20px 0;
     border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-table, th, td {
-    border: 1px solid #0288d1;
+table thead th {
+    background-color: #1a8496;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
-th, td {
-    padding: 15px;
-    text-align: left;
+table th,table td {
+    padding: 12px 15px;
+    text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
 }
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #1a8496;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #e1eff3;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #1a8496;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section ol {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+section ol li {
+    color: #343a40;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
 
 footer {
-    background-color: #0288d1;
-    color: white;
+    background-color: #4f8089; /* Couleur de fond Light Blue */
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 15px;
+    color: white;
 }
+
