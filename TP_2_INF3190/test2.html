@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Soumission Assurance Auto</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="logo.png" alt="Logo compagnie d'assurance">
+            </div>
+            <div class="nav-links">
+                <a href="#">Contact</a>
+                <a href="#">Obtenir une soumission</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="formContainer" style="display: none;">
+                <form id="insuranceForm">
+                    <div id="genderDiv">
+                        <label for="gender">Êtes-vous un homme ou une femme?</label>
+                        <select id="gender" required>
+                            <option value="">- Choisissez -</option>
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                            <option value="Non-binaire">Non-binaire</option>
+                        </select>
+                    </div>
+
+                    <div id="ageDiv">
+                        <label for="age">Quel est votre âge?</label>
+                        <input type="number" id="age" required>
+                    </div>
+
+                    <div id="carValueDiv">
+                        <label for="carValue">Quel est la valeur d'achat de votre véhicule (en dollars)?</label>
+                        <input type="number" id="carValue" required>
+                    </div>
+
+                    <div id="carYearDiv">
+                        <label for="carYear">En quelle année avez-vous acheté votre véhicule?</label>
+                        <input type="number" id="carYear" required>
+                    </div>
+
+                    <div id="claimsDiv">
+                        <label for="hasClaims">Avez-vous fait des réclamations d'assurance auto dans les 6 dernières années?</label>
+                        <select id="hasClaims" required>
+                            <option value="">- Choisissez -</option>
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select>
+                    </div>
+
+                    <div id="claimsNumberDiv" style="display: none;">
+                        <label for="claimsNumber">Combien de réclamations avez-vous faites?</label>
+                        <input type="number" id="claimsNumber">
+                    </div>
+
+                    <div id="claimsAmountDiv" style="display: none;"></div>
+
+                    <button type="submit">Soumettre</button>
+                </form>
+            </div>
+            <p id="result"></p>
+        </div>
+        <script src="test3.js"></script>
+    </main>
+
+    <footer>
+        <p>© 2023 Compagnie d'assurance. Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>

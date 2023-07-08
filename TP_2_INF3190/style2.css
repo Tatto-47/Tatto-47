@@ -1,0 +1,114 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #08bae2;
+    color: white;
+}
+
+#logo img {
+    height: 50px;
+}
+
+#navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+#navLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+#formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input, select {
+    height: 40px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    max-width: 600px;
+    margin: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+}
