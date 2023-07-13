@@ -1,95 +1,84 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
 }
 
 nav {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #08bae2;
-    color: white;
 }
 
-#logo img {
-    height: 50px;
+.nav-logo img {
+    width: 150px;
 }
 
-#navLinks {
-    display: flex;
-    gap: 20px;
-}
-
-#navLinks a {
-    color: white;
-    text-decoration: none;
-}
-
-#formContainer {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-h1 {
-    text-align: center;
+.nav-links a {
     color: #333;
-    margin-bottom: 20px;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
-form {
+.nav-links a:hover {
+    color: #007bff;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+#insuranceForm {
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-label {
-    font-weight: bold;
-    margin-top: 20px;
+#insuranceForm div {
+    margin-bottom: 20px;
 }
 
-input, select {
-    height: 40px;
-    padding: 5px 10px;
-    margin-top: 5px;
+#insuranceForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#insuranceForm input, #insuranceForm select {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-button {
-    background-color: #007BFF;
-    color: white;
+#insuranceForm button {
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    height: 40px;
-    margin-top: 20px;
     border-radius: 5px;
+    padding: 10px 15px;
     cursor: pointer;
 }
 
-button:hover {
+#insuranceForm button:hover {
     background-color: #0056b3;
 }
 
-#result {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-    font-size: 20px;
-    color: #333;
-}
-
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #f8f9fa;
     text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
+    margin-top: 20px;
 }
